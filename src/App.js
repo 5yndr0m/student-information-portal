@@ -20,21 +20,19 @@ function App() {
   return (
     <div>
       <h1 className="title">Student Information Portal</h1>
-      
 
       <div className="font-selector">
-          <hr/>
-          <p>Change font size :  
-          <button onClick={() => handleFontSizeChange('small')}>Small</button>
-          <button onClick={() => handleFontSizeChange('medium')}>Medium</button>
-          <button onClick={() => handleFontSizeChange('large')}>Large</button> </p>
-          <hr/>
-        </div>
+        <hr/>
+        <p>Change font size :  
+        <button onClick={() => handleFontSizeChange('small')}>Small</button>
+        <button onClick={() => handleFontSizeChange('medium')}>Medium</button>
+        <button onClick={() => handleFontSizeChange('large')}>Large</button> </p>
+        <hr/>
+      </div>
 
       <div className={`outerDiv ${fontSize}`}>
-          <StuDataTable students={studentsData} handleViewProfile={handleViewProfile} />
-
-          <ProfileView selectedStudent={selectedStudent} />
+        <StuDataTable students={studentsData} handleViewProfile={handleViewProfile} />
+        <ProfileView selectedStudent={selectedStudent} />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ export default function StuDataTable({ students, handleViewProfile }) {
   
     return (
       <div className="leftDiv">
-        <table>
+        <table border='2' className="tableStyle">
           <thead>
             <tr>
               <th>First Name</th>

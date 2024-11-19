@@ -6,12 +6,11 @@ export default function ProfileView({ selectedStudent }) {
       <div className="rightDiv">
         {selectedStudent && (
           <>
-            <table className='tableStyle'>
+            <table border='2' className="tableStyle">
               <tbody>
                   <tr>
-                    <td rowSpan={8}>
-                      <img
-                        className="profile"
+                    <td rowSpan={8} >
+                      <img className="profile"
                         src={require(`../assets/profilepic/${selectedStudent.profilePic}`)}
                         alt="Profile"
                       />
