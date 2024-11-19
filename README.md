@@ -1,6 +1,13 @@
 # RegNo : 2020/ICT/19
 # student-information-portal
-This repo contains my practical for IT3133: Mobile Communication and Computing
+This repo contains my practical for IT3133: Mobile Communication and Computing Assignment
+
+# Background
+
+The IT development committee of the University of Vavuniya is expected to create an online
+students’ information portal. They are willing to hire talented IT students to be part of the
+development team. Students must complete the given SPA project task with efficient
+programming methods and component architecture for the initial selection process. 
 
 ## Available Scripts
 
