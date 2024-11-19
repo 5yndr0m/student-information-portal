@@ -1,8 +1,9 @@
+import '../assets/css/compo.css'
 
 export default function StuDataTable({ students, handleViewProfile }) {
   
     return (
-      <div className="students-table">
+      <div className="leftDiv">
         <table>
           <thead>
             <tr>

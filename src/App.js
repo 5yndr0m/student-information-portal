@@ -1,4 +1,5 @@
 import "./App.css";
+import './assets/css/compo.css'
 import React, { useState } from 'react';
 import { students as studentsData } from "./assets/StudentsDb";
 import StuDataTable from "./components/stuDataTable";
@@ -20,40 +21,20 @@ function App() {
     <div>
       <h1 className="title">Student Information Portal</h1>
       
-      <div className={`app-container ${fontSize}`}>
-        
-        
-        
-        <div className="font-selector">
+
+      <div className="font-selector">
           <hr/>
+          <p>Change font size :  
           <button onClick={() => handleFontSizeChange('small')}>Small</button>
           <button onClick={() => handleFontSizeChange('medium')}>Medium</button>
-          <button onClick={() => handleFontSizeChange('large')}>Large</button>
+          <button onClick={() => handleFontSizeChange('large')}>Large</button> </p>
           <hr/>
         </div>
-  
-        <div className="content-container">
+
+      <div className={`outerDiv ${fontSize}`}>
           <StuDataTable students={studentsData} handleViewProfile={handleViewProfile} />
-  
-          {/* Right Side - Student Profile */}
-          {/* <div className="student-profile">
-            {selectedStudent && (
-              <>
-                <img
-                  className="profile"
-                  src={require(`./assets/profilepic/${selectedStudent.profilePic}`)}
-                  alt="Profile"
-                />
-                <h2>{selectedStudent.firstName} {selectedStudent.lastName}</h2>
-                <p><strong>Course:</strong> {selectedStudent.course}</p>
-                <p><strong>Country:</strong> {selectedStudent.country}</p>
-                <p><strong>Email:</strong> {selectedStudent.email}</p>
-                <p><strong>Phone:</strong> {selectedStudent.phone}</p>
-              </>
-            )}
-          </div> */}
+
           <ProfileView selectedStudent={selectedStudent} />
-        </div>
       </div>
     </div>
   );

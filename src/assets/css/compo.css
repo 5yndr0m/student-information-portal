@@ -25,3 +25,8 @@
 .profile{
     width: 75%;
 }
+
+.tableStyle {
+    border: #000;
+    border-width: 2;
+}

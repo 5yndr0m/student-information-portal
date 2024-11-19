@@ -1,11 +1,12 @@
+import '../assets/css/compo.css'
 
 export default function ProfileView({ selectedStudent }) {
   
     return (
-      <div className="student-profile">
+      <div className="rightDiv">
         {selectedStudent && (
           <>
-            <table>
+            <table className='tableStyle'>
               <tbody>
                   <tr>
                     <td rowSpan={8}>
@@ -15,8 +16,6 @@ export default function ProfileView({ selectedStudent }) {
                         alt="Profile"
                       />
                     </td>
-                  </tr>
-                  <tr>
                     <td><p><strong>ID:</strong> {selectedStudent.studentId}</p></td>
                   </tr>
                   <tr>
