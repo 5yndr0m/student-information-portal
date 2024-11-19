@@ -7,13 +7,13 @@
     margin: 0px auto;
     padding: 5px;
     position: absolute;
-    width: 100vw;
+    width: 98vw;
 }
 .leftDiv
 {
     background-color: #efefef;
     color: #000;
-    width: 50%;
+    width: 48%;
     float: left;
 }
 .rightDiv
@@ -24,10 +24,15 @@
     float: right;
 }
 .profile{
-    width: 70%;
+    object-fit: cover;
+    width: 300px;
+    height: 350px;
+    /* padding-right: 10px; */
 }
 
 .tableStyle {
     width: 100%;
     text-align: left;
+    border-collapse: collapse;
+    border-width: 2px;
 }
